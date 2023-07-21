@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fc4e3f07a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="A code symbol">
+        </div>
+        <span id="bar"><i class="fa-solid fa-bars-staggered"></i></span>
+        
+        <nav>
+            <span id="ex"><i class="fa-solid fa-x"></i></span>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">FAQ</a>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="hero">
+            <h1>Hello there!</h1>
+            <h3>Welcome to my workspace</h3>
+        </div>
+        <section>
+            <div class="block">Content</div>
+            <div class="block">Content</div>
+            <div class="block">Content</div>
+            <div class="block">Content</div>
+        </section>
+    </main>
+
+    <script>
+        const bar = document.getElementById('bar');
+        const ex = document.getElementById('ex');
+        const nav = document.querySelector('nav');
+        
+        // Nav-slide_effect
+        bar.addEventListener('click', function(){
+            nav.classList.add('nav-slide_effect');
+        });
+        ex.addEventListener('click', function(){
+            nav.classList.remove('nav-slide_effect');
+        })
+
+    </script>
+</body>
+</html>
